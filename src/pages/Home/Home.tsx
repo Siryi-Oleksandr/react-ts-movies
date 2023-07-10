@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import {movieAPI} from 'components/services/moviesApi';
 import MoviesList from 'components/MoviesList/MoviesList';
 import Loader from 'components/Loader/Loader';
-// import { toast } from 'react-hot-toast';
 import Error from 'components/Error/Error';
 import type {
   IFilmInfo,

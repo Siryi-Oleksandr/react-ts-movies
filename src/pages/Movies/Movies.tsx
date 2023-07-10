@@ -7,10 +7,6 @@ import { FcSearch } from 'react-icons/fc';
 import {movieAPI} from 'components/services/moviesApi';
 import { Form, Input, SearchBtn } from './Movies.styled';
 
-// interface IQuery {
-//   query: string;
-// }
-
 function Movies() {
   const [movies, setMovies] = useState([]);
   const [status, setStatus] = useState('idle');

@@ -6,14 +6,6 @@ export interface IFilmInfo {
   vote_average: number;
   vote_count: number;
   title: string;
-  //   adult?: boolean;
-  //   original_language?: string;
-  //   overview?: string;
-  //   media_type?: string;
-  //   genre_ids?: number[];
-  //   popularity?: number;
-  //   release_date?: string;
-  //   video?: boolean;
 }
 
 export interface IGenre {
