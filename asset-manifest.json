@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/react-ts-movies/static/js/main.d692c9c5.js",
+    "index.html": "/react-ts-movies/index.html",
+    "main.d692c9c5.js.map": "/react-ts-movies/static/js/main.d692c9c5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d692c9c5.js"
+  ]
+}
