@@ -16,6 +16,10 @@ export interface IFilmInfo {
   //   video?: boolean;
 }
 
+export interface IGenre {
+  name: string;
+}
+
 export interface IFilmDetails {
   original_title: string;
   poster_path: string;
@@ -26,6 +30,14 @@ export interface IFilmDetails {
   genres: IGenre[];
 }
 
-export interface IGenre {
-  name: string;
+export interface ICastInfo {
+  original_name: string;
+  profile_path: string;
+  cast_id: number;
+}
+
+export interface IReviewInfo {
+  author: string;
+  content: string;
+  id: string;
 }

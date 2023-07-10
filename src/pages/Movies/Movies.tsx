@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect  } from 'react';
 import { URLSearchParamsInit, useSearchParams } from 'react-router-dom';
 import Error from 'components/Error/Error';
 import Loader from 'components/Loader/Loader';

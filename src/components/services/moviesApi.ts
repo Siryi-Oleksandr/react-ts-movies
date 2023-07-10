@@ -57,35 +57,35 @@ class MovieAPI {
     }
   }
 
-  // export async function getMovieCast(id, controller) {
-  //   try {
-  //     const actors = await agent.get(`movie/${id}/credits`, {
-  //       params: {
-  //         signal: controller.signal,
-  //       },
-  //     });
+  public async getMovieCast(id: string, controller: AbortController) {
+    try {
+      const actors = await agent.get(`movie/${id}/credits`, {
+        params: {
+          signal: controller.signal,
+        },
+      });
 
-  //     return actors?.data?.cast;
-  //   } catch (error) {
-  //     toast.error('Something went wrong 😥!');
-  //     console.error(error);
-  //   }
-  // }
+      return actors?.data?.cast;
+    } catch (error) {
+      toast.error('Something went wrong 😥!');
+      console.error(error);
+    }
+  }
 
-  // export async function getMovieReviews(id, controller) {
-  //   try {
-  //     const reviews = await agent.get(`movie/${id}/reviews`, {
-  //       params: {
-  //         signal: controller.signal,
-  //       },
-  //     });
+  public async getMovieReviews(id: string, controller: AbortController) {
+    try {
+      const reviews = await agent.get(`movie/${id}/reviews`, {
+        params: {
+          signal: controller.signal,
+        },
+      });
 
-  //     return reviews?.data?.results;
-  //   } catch (error) {
-  //     toast.error('Something went wrong 😥!');
-  //     console.error(error);
-  //   }
-  // }
+      return reviews?.data?.results;
+    } catch (error) {
+      toast.error('Something went wrong 😥!');
+      console.error(error);
+    }
+  }
 }
 
 const movieAPI = new MovieAPI();
